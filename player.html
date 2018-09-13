@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>朕的音乐播放器</title>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/play.js"></script> 
+</head>
+<body>
+	<div id="player">
+		<audio id="music"src="audio/music.mp3"></audio>
+		<img src="images/music.jpg" alt="专辑封面">
+		<div class="controls">
+			<button id="play" onclick="togglePaly()">
+				<i class="iconfont icon-player-play"></i>
+			</button>
+			<button id="jingyin" onclick="togglejingyin()">
+				<i class="iconfont icon-laba"></i>
+			</button>
+			<input id="yinliang" type="range" name="yinliang" min="0" max="1" step="0.1" onchange="sevVolume()">
+
+
+		</div>
+
+	</div>
+
+</body>
+</html>
